@@ -5,9 +5,9 @@ This is a project of Children's Hospital. TOPS is an LMS tool which is meant to 
 ## Setup
 Follow these steps for your local setup of this project.
 
-* You probably will want to have [MAMP][https://www.mamp.info/en/downloads/] setup and running on your localhost. I also have mySQL running as a service via Homebrew. That's not required, but if you have that, MAMP will connect to that so you only have MySQL running.
+* You probably will want to have [MAMP](https://www.mamp.info/en/downloads/) setup and running on your localhost. I also have mySQL running as a service via Homebrew. That's not required, but if you have that, MAMP will connect to that so you only have MySQL running.
 
-* Fire up MAMP and use the phpMyAdmin it provides to create your database and user. Use the database name should be that of what is working on the live site. The database should use [the utf8mb4 character set][https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-utf8mb4.html]. The tables need to be prefixed with 'tops_'. The user account does not need to match since your wp-config.php file will not get pushed to the repo, but the database and table prefix must match.
+* Fire up MAMP and use the phpMyAdmin it provides to create your database and user. Use the database name should be that of what is working on the live site. The database should use [the utf8mb4 character set](https://dev.mysql.com/doc/refman/5.5/en/charset-unicode-utf8mb4.html). The tables need to be prefixed with 'tops_'. The user account does not need to match since your wp-config.php file will not get pushed to the repo, but the database and table prefix must match.
 
 * Now clone the repo into a local directory and set the values in the wp-config to match what you set up for the database and the user account.  
 
