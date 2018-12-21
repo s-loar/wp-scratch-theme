@@ -17,4 +17,4 @@ Follow these steps for your local setup of this project.
 
 * Now go into the phpMyAdmin for your local site and select your WordPress database. Select all of the tables and then delete them. With the tables gone, you can go to the Import tab. You want to import the zip file you created from the live site. Select the extracted zip file and click "Go" to start the import. When this is done, your site should match the live site and you are good to make changes.
 
-* If there are no users in the live system, this can be done in reverse to initially populate its database as well.
+* If there are no users/data in the live system, this can be done in reverse to initially populate its database as well. But after the site is live, do not overwrite the database.
