@@ -1,6 +1,6 @@
-# TOPS Project
+# Custom Built Theme in WordPress Project
 
-This is a project of Children's Hospital. TOPS is an LMS tool which is meant to help in the recovery of teens with critical brain injuries.
+This is a project to learn and practice the art of custom theme development in the WordPress platform.
 
 ## Setup
 Follow these steps for your local setup of this project.
