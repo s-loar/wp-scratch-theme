@@ -35,6 +35,9 @@ function fictional_files() {
   wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   wp_enqueue_style('main_styles', get_stylesheet_uri(), NULL, microtime());
+  wp_localize_script('main-js', 'fictionalData', array(
+    'root_url' => get_site_url()
+  )); // this injects an array of values into the JS of our front-end pages
 }
 add_action('wp_enqueue_scripts', 'fictional_files');
 
@@ -55,7 +58,7 @@ function fictional_adjust_queries($query) {
   if (!is_admin() AND is_post_type_archive('campus') AND $query->is_main_query()) {
     $query->set('posts_per_page', -1);
   }
-  
+
   if (!is_admin() AND is_post_type_archive('program') AND $query->is_main_query()) {
     $query->set('orderby', 'title');
     $query->set('order', 'ASC');
